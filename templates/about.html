@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>About Heart Strokes</title>
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #f2f2f2;
+        }
+
+        nav.navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .pricing-header {
+            background-color: #1d272e1c;
+            color: #f0e3c2;
+        }
+
+        form input[type=submit] {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .text-danger {
+            color: #ffc08d;
+        }
+
+        .alert.alert-success {
+            background-color: #1e7e34;
+            color: #f2f2f2;
+            border-color: #1e7e34;
+        }
+
+        .btn-close {
+            color: #f2f2f2;
+        }
+
+        .navbar-nav .nav-link:hover {
+          border: 1px solid white;
+        }
+
+        .navbar-nav .nav-link {
+          color: #9dbb6e;
+        }
+
+        .navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 9999;
+          height: 70px; /* Change the height to your preference */
+        }
+
+        .navbar-nav .nav-link {
+          font-size: 18px; /* Change the font size to your preference */
+          font-weight: bold; /* Add bold font-weight to make the links more noticeable */
+        }
+
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navbar {
+            height: 80px;
+            background: linear-gradient(to bottom, #333, #444);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar-nav {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            color: #ffcc00;
+        }
+
+        .about {
+            margin-top: 100px;
+            padding: 0 15px;
+        }
+
+        .about h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+font-size: 20px;
+line-height: 1.5;
+margin-bottom: 40px;
+text-align: justify;
+}
+
+@media (min-width: 576px) {
+.about p {
+font-size: 24px;
+margin-bottom: 60px;
+}
+}
+
+@media (min-width: 768px) {
+.about {
+max-width: 800px;
+margin: 100px auto;
+}
+
+.about p {
+font-size: 28px;
+margin-bottom: 60px;
+}
+}
+
+@media (min-width: 992px) {
+.about {
+margin-top: 120px;
+}
+}
+
+@media (min-width: 1200px) {
+.about {
+max-width: 1000px;
+margin-bottom: 150px;
+}
+
+.about p {
+font-size: 32px;
+margin-bottom: 80px;
+}
+}
+
+
+nav.navbar {
+        background-color: #343a40;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+        color: #ffc107;
+    }
+
+    .carousel-item.active, .carousel-item-next, .carousel-item-prev {
+        display: block;
+    }
+
+    .carousel-indicators button {
+        background-color: rgba(255, 255, 255, 0.5);
+        border: none;
+    }
+
+    .carousel-indicators button.active {
+        background-color: #ffc107;
+    }
+
+    .carousel-caption {
+        color: #f2f2f2;
+    }
+
+    .pricing-header {
+        background-color: #1d272e1c;
+        color: #f0e3c2;
+    }
+
+    form input[type=submit] {
+        background-color: #ffc107;
+        border-color: #ffc107;
+    }
+
+    .text-danger {
+        color: #ffc08d;
+    }
+
+    .alert.alert-success {
+        background-color: #1e7e34;
+        color: #f2f2f2;
+        border-color: #1e7e34;
+    }
+
+    .btn-close {
+        color: #f2f2f2;
+    }
+
+    .navbar-nav .nav-link:hover {
+  border: 1px solid white;
+    }
+    
+    
+.navbar-nav .nav-link {
+  color: #9dbb6e;
+    }
+    .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  height: 70px; /* Change the height to your preference */
+    }
+
+.navbar-nav .nav-link {
+  font-size: 18px; /* Change the font size to your preference */
+  font-weight: bold; /* Add bold font-weight to make the links more noticeable */
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar {
+        height: 80px;
+        background: linear-gradient(to bottom, #333, #444);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-brand {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffcc00;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-nav {
+        margin-right: 20px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .nav-link:hover {
+        color: #ffcc00;
+    }
+    .navbar {
+            height: 80px;
+            background: linear-gradient(to bottom, #333, #444);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    
+        .navbar-brand {
+            font-size: 32px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        }
+    
+        .navbar-nav {
+            margin-right: 20px;
+        }
+    
+        .nav-link {
+            font-size: 20px;
+            color: #fff;
+        }
+    
+        .nav-link:hover {
+            color: #ffcc00;
+        }
+    
+
+</style>
+    
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand text-center" href="#">BEATSAGE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('stroke') }}">Dataset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="mailto:yourname@example.com">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<style>
+    .navbar-nav .nav-link:hover {
+      border-bottom: 2px solid white;
+    }
+    .navbar-nav .nav-link {
+      margin-right: 1rem;
+    }
+    </style>
+    
+
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"><br><br>
+        <h1>About Beatsage</h1><hr> <br>
+        <p>This website provides a stroke prediction tool based on machine learning algorithms that analyze various health parameters and demographic information to predict the likelihood of an individual experiencing a stroke. By providing this information, individuals may be able to take proactive steps to reduce their risk of stroke and maintain their overall health and well-being.</p>
+        <hr>
+        <p>
+            This project focuses on building a machine learning model to predict the occurrence of stroke in patients based on a healthcare dataset. The dataset used in this study is the "healthcare-dataset-stroke-data" from Kaggle, which contains the medical information of 5110 individuals. The main objective of this project is to develop an accurate prediction model that can help healthcare professionals identify patients who are at a higher risk of developing a stroke.  
+        </p> <hr>
+        <p>Strokes are a serious medical condition that occurs when the blood supply to the brain is interrupted or reduced. This can cause brain cells to die or become damaged, leading to various symptoms such as difficulty speaking, weakness or numbness in the face or limbs, vision problems, and loss of coordination. The severity and duration of symptoms can vary depending on the location and extent of the stroke.</p>
+        <hr><p>There are several risk factors associated with heart strokes, including high blood pressure, smoking, diabetes, and obesity. By understanding these risk factors and taking steps to address them, individuals may be able to reduce their risk of experiencing a stroke.</p>
+     <hr> </div>
+    </div>
+  </div>
+</section>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- End of About page -->
