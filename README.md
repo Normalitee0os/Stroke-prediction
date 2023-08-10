@@ -5,3 +5,6 @@ This is my university minor project: BeatSage the stroke prediction app which is
 I have improvements on the project to remove the bugs from the original app so that the logic is finally working now!
 
 previously it was always detecting NO but now the prediction is accurate upto 99.78 percent on the cross-validation set
+
+
+
